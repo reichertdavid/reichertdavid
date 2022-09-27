@@ -5,17 +5,15 @@
 <div align="left">
   <h3>📃 Something about me!</h3>
 - 🙋🏻‍♂️ My name is David Reichert<br>
-- 🌱 I’m currently educating to an IT-Assistant<br>
-- ⏰ I'm eightteen years old<br>
+- 🌱 Aspiring Software-Developer<br>
+- ⏰ I'm nineteen years old<br>
 - 🏡 I'm living in germany<br>
-- 💻 I'm working with Kotlin and Java mainly!<br>
 </div>
 
 ---
 
 <div align="left">
   <h3>👾 Some projects</h3>
-  - <a href="https://github.com/reichertdavid/Turtles">Turtles</a><br>
   - <a href="https://github.com/reichertdavid/EncryptedUploader">EncryptedUploader</a>
 </div>
 
