@@ -1,20 +1,17 @@
+
 # Hi there!👋
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=reichertdavid&show_icons=true&count_private=true&theme=tokyonight">
 
-<div align="left">
-  <h3>📃 Something about me!</h3>
-- 🙋🏻‍♂️ My name is David Reichert<br>
-- 🌱 Aspiring Software-Developer<br>
-- ⏰ I'm nineteen years old<br>
-- 🏡 I'm living in germany<br>
-</div>
+🙋🏻‍♂️ My name is David Reichert. I’m currently an **aspiring** Software Developer. I started programming at a very young age at now have **experience** for about **six years**. I try to focus on backend development using **kotlin** and partwise **java**. Due to school and my current work I have a lot of **C#** knowledge.
+
+I built a few small web applications using Angular but won't consider myself an Intermediate.
 
 ---
 
 <div align="left">
   <h3>👾 Some projects</h3>
-  - <a href="https://github.com/reichertdavid/EncryptedUploader">EncryptedUploader</a>
+  - <a href="https://github.com/reichertdavid/EncryptedUploader">EncryptedUploader</a><br>
+  - <a href="https://github.com/reichertdavid/Turtles">Turtles</a>
 </div>
 
 ---
