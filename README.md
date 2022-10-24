@@ -10,6 +10,7 @@ I built a few small web applications using Angular but won't consider myself an 
 
 <div align="left">
   <h3>👾 Some projects</h3>
+  - <a href="https://github.com/reichertdavid/Minelin">Minelin</a><br>
   - <a href="https://github.com/reichertdavid/EncryptedUploader">EncryptedUploader</a><br>
   - <a href="https://github.com/reichertdavid/Turtles">Turtles</a>
 </div>
