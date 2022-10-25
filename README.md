@@ -2,9 +2,9 @@
 # Hi there!👋
 
 
-🙋🏻‍♂️ My name is David Reichert. I’m currently an **aspiring** Software Developer. I started programming at a very young age at now have **experience** for about **six years**. I try to focus on backend development using **kotlin** and partwise **java**. Due to school and my current work I have a lot of **C#** knowledge.
+🙋🏻‍♂️ My name is David Reichert. I’m currently an **aspiring** Software Developer. I started programming at a very young age and now I have **experience** for about **six years**. I try to maintain on backend development using **kotlin** and partwise **java**. Due to school and my current job I also have a lot of **C#** knowledge.
 
-I built a few small web applications using Angular but won't consider myself an Intermediate.
+I've built a few small web applications using Angular but won't consider myself an Intermediate.
 
 ---
 
