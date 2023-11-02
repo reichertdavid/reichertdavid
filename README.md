@@ -1,11 +1,20 @@
+## Hey there! 👋 I'm David Reichert
 
-# Hi there!👋
+🌟 *20-year-old software enthusiast and problem-solving aficionado*
 
+👨‍💻 **Background:**
+I've been diving into the world of software development for the past 7 years, and I've been doing it professionally for 5 years now. Currently, I'm in the realm of iOS development, but I mostly work with Kotlin, Java, and AngularJS.
 
-🙋🏻‍♂️ My name is David Reichert. I’m currently an **aspiring** Software Developer. I started programming at a very young age and now I have **experience** for about **six years**. I try to maintain on backend development using **kotlin** and partwise **java**. Due to school and my current job I also have a lot of **C#** knowledge.
+💻 **Projects:**
+I take great pleasure in developing Minecraft projects, with Minelin being one of my notable creations—a minecraft server written from scratch (or it will be).
 
-I've built a few small web applications using Angular but won't consider myself an Intermediate.
+🚀 **Current Focus:**
+Continuously honing my skills, I'm dedicated to refining my craft. Whether it's troubleshooting, implementing new features, or architecting solutions, I'm deeply engaged in the process of transforming concepts into functional realities.
 
+🌌 **Exploration and Innovation:**
+I'm on an expedition in the digital realm, pushing boundaries and striving for excellence in each project undertaken.
+
+Feel free to reach out and let's chat about code, gaming, or just about anything cool! 😊✨
 ---
 
 <div align="left">
@@ -26,5 +35,3 @@ I've built a few small web applications using Angular but won't consider myself 
 </div>
 
 ---
-
-❤️ Feel free to ask me everything you want!
