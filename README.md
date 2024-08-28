@@ -1,12 +1,12 @@
 ## Hey there! 👋 I'm David Reichert
 
-🌟 *20-year-old software enthusiast and problem-solving aficionado*
+🌟 *21-year-old software enthusiast and problem-solving aficionado*
 
 👨‍💻 **Background:**
-I've been diving into the world of software development for the past 7 years, and I've been doing it professionally for 5 years now. Currently, I'm in the realm of iOS development, but I mostly work with Kotlin, Java, and AngularJS.
+I've been diving into the world of software development for the past 8 years, and I've been doing it professionally for 6 years now. Currently, I'm in the realm of iOS development (for work), but in private use I mostly use Kotlin, Java, and AngularJS.
 
 💻 **Projects:**
-I take great pleasure in developing Minecraft projects, with Minelin being one of my notable creations—a minecraft server written from scratch (or it will be).
+I take great pleasure in developing Minecraft projects, with Minelin being one of my notable creations—a minecraft server written from scratch (or it will be, someday, hopefully... If I find time :D).
 
 🚀 **Current Focus:**
 Continuously honing my skills, I'm dedicated to refining my craft. Whether it's troubleshooting, implementing new features, or architecting solutions, I'm deeply engaged in the process of transforming concepts into functional realities.
