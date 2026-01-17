@@ -1,6 +1,6 @@
 ## Hey there! 👋 I'm David Reichert
 
-🌟 *21-year-old software enthusiast and problem-solving aficionado*
+🌟 *22-year-old software enthusiast and problem-solving aficionado*
 
 👨‍💻 **Background:**
 I've been diving into the world of software development for the past 8 years, and I've been doing it professionally for 6 years now. Currently, I'm in the realm of iOS development (for work), but in private use I mostly use Kotlin, Java, and AngularJS.
