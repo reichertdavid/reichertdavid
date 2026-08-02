@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="420" viewBox="0 0 1200 420" fill="none" role="img">
+<defs>
+
+<linearGradient id="neon-h" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97"/>
+  <stop offset="45%" stop-color="#7b5cff"/>
+  <stop offset="100%" stop-color="#22e0ff"/>
+</linearGradient>
+<linearGradient id="sheenG-h" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="50%" stop-color="#ff6ec7" stop-opacity="0.13"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="glass-h" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#ffffff" stop-opacity="0.03"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+</linearGradient>
+<linearGradient id="edge-h" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97" stop-opacity="0.55"/>
+  <stop offset="50%" stop-color="#7b5cff" stop-opacity="0.20"/>
+  <stop offset="100%" stop-color="#22e0ff" stop-opacity="0.55"/>
+</linearGradient>
+<linearGradient id="bgfill-h" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#05030e"/>
+  <stop offset="100%" stop-color="#0b0720"/>
+</linearGradient>
+<radialGradient id="blobA-h"><stop offset="0%" stop-color="#ff2e97" stop-opacity="0.85"/><stop offset="100%" stop-color="#ff2e97" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobB-h"><stop offset="0%" stop-color="#22e0ff" stop-opacity="0.75"/><stop offset="100%" stop-color="#22e0ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobC-h"><stop offset="0%" stop-color="#7b5cff" stop-opacity="0.9"/><stop offset="100%" stop-color="#7b5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobD-h"><stop offset="0%" stop-color="#6ef7c1" stop-opacity="0.45"/><stop offset="100%" stop-color="#6ef7c1" stop-opacity="0"/></radialGradient>
+<filter id="soft-h" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="52"/>
+</filter>
+<filter id="glow-h" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="6" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="grain-h" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+</filter>
+<pattern id="grid-h" width="44" height="44" patternUnits="userSpaceOnUse">
+  <path d="M44 0H0V44" stroke="#eae6ff" stroke-opacity="0.045" stroke-width="1" fill="none"/>
+</pattern>
+<clipPath id="card-h"><rect x="6" y="6" width="1188" height="408" rx="26"/></clipPath>
+
+<linearGradient id="word-h" x1="0" y1="0" x2="1" y2="0.6">
+  <stop offset="0%" stop-color="#ff6ec7"><animate attributeName="stop-color" values="#ff6ec7;#22e0ff;#7b5cff;#ff6ec7" dur="12s" repeatCount="indefinite"/></stop>
+  <stop offset="50%" stop-color="#eae6ff"/>
+  <stop offset="100%" stop-color="#22e0ff"><animate attributeName="stop-color" values="#22e0ff;#7b5cff;#ff6ec7;#22e0ff" dur="12s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<clipPath id="type0"><rect class="rv0" x="60" y="244" width="626.4" height="30"/></clipPath><clipPath id="type1"><rect class="rv1" x="60" y="244" width="550.8" height="30"/></clipPath><clipPath id="type2"><rect class="rv2" x="60" y="244" width="540.0" height="30"/></clipPath>
+</defs>
+<style>
+<![CDATA[
+
+.b1,.b2,.b3,.b4 { transform-box: view-box; }
+.b1 { animation: drift1 26s ease-in-out infinite alternate; }
+.b2 { animation: drift2 31s ease-in-out infinite alternate; }
+.b3 { animation: drift3 23s ease-in-out infinite alternate; }
+.b4 { animation: drift4 37s ease-in-out infinite alternate; }
+@keyframes drift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(170px,-40px) scale(1.25); } }
+@keyframes drift2 { from { transform: translate(0,0) scale(1.1); } to { transform: translate(-190px,-70px) scale(0.85); } }
+@keyframes drift3 { from { transform: translate(0,0) scale(0.9); } to { transform: translate(120px,90px) scale(1.2); } }
+@keyframes drift4 { from { transform: translate(0,0) scale(1); } to { transform: translate(-140px,60px) scale(1.3); } }
+
+.sheen { transform-box: view-box; animation: sheen 9s ease-in-out infinite; }
+@keyframes sheen {
+  0%,55% { transform: translateX(0) skewX(-14deg); }
+  85%,100% { transform: translateX(1700px) skewX(-14deg); }
+}
+
+.rv0,.rv1,.rv2 { transform-box: fill-box; transform-origin: left center; transform: scaleX(0);
+                 animation: reveal 12s steps(48,end) infinite; }
+.rv1 { animation-delay: 4s; }
+.rv2 { animation-delay: 8s; }
+@keyframes reveal { 0% { transform: scaleX(0); } 12.5%,33.33% { transform: scaleX(1); } 33.34%,100% { transform: scaleX(0); } }
+.tl0,.tl1,.tl2 { opacity: 0; animation: peek 12s linear infinite; }
+.tl1 { animation-delay: 4s; }
+.tl2 { animation-delay: 8s; }
+@keyframes peek { 0%,30% { opacity: .92; } 33.33%,100% { opacity: 0; } }
+.caret { transform-box: view-box; animation: run 12s steps(48,end) infinite, blink .9s steps(2,end) infinite; }
+
+@keyframes run {
+  0% { transform: translateX(0); }
+  12.5%,33.33% { transform: translateX(626.4px); }
+  33.34% { transform: translateX(0); }
+  45.83%,66.66% { transform: translateX(550.8px); }
+  66.67% { transform: translateX(0); }
+  79.16%,100% { transform: translateX(540.0px); }
+}
+
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+.blink { animation: blink 1.8s ease-in-out infinite; }
+.pulse { transform-box: view-box; animation: slide 7s cubic-bezier(.5,0,.5,1) infinite; }
+@keyframes slide { 0%,100% { transform: translateX(0); } 50% { transform: translateX(644px); } }
+.orb { transform-box: view-box; transform-origin: 985px 210px;
+        animation-name: spin; animation-timing-function: linear; animation-iteration-count: infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.core { transform-box: view-box; transform-origin: 985px 210px; animation: breathe 4.5s ease-in-out infinite; }
+@keyframes breathe { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.05); opacity: 1; } }
+.fade-a,.fade-b,.fade-c,.pill { opacity: 0; animation: rise .9s cubic-bezier(.2,.8,.2,1) forwards; }
+.fade-a { animation-delay: .1s; }
+.fade-b { animation-delay: .35s; }
+.fade-c { animation-delay: 1.35s; }
+.pill  { transform-box: view-box; }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+]]>
+</style>
+
+<g clip-path="url(#card-h)">
+  <rect x="6" y="6" width="1188" height="408" rx="26" fill="url(#bgfill-h)"/>
+  
+<g filter="url(#soft-h)" opacity="0.9">
+  <circle class="b1" cx="216" cy="126" r="231" fill="url(#blobA-h)"/>
+  <circle class="b2" cx="936" cy="302" r="252" fill="url(#blobB-h)"/>
+  <circle class="b3" cx="624" cy="42" r="210" fill="url(#blobC-h)"/>
+  <circle class="b4" cx="1104" cy="84" r="168" fill="url(#blobD-h)"/>
+</g>
+  <rect x="6" y="6" width="1188" height="408" rx="26" fill="#05030e" opacity="0.55"/>
+  <rect x="6" y="6" width="1188" height="408" rx="26" fill="url(#grid-h)"/>
+  <rect x="6" y="6" width="1188" height="408" rx="26" fill="url(#glass-h)"/>
+  <rect x="6" y="6" width="1188" height="408" filter="url(#grain-h)" opacity="0.05"/>
+  <rect class="sheen" x="-400" y="6" width="300" height="408" fill="url(#sheenG-h)"/>
+</g>
+<rect x="6.5" y="6.5" width="1187" height="407" rx="26" fill="none"
+      stroke="url(#edge-h)" stroke-width="1.4"/>
+<text x="60" y="112" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="600" fill="#22e0ff" letter-spacing="4.2" textLength="352" lengthAdjust="spacing" class="fade-a">// FULLSTACK SOFTWARE ENGINEER</text>
+<g class="fade-b"><text x="60" y="196" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif" font-size="78" font-weight="800" fill="url(#word-h)" letter-spacing="5" textLength="764" lengthAdjust="spacing" filter="url(#glow-h)">DAVID REICHERT</text></g>
+<g class="fade-b"><rect x="60" y="214" width="764" height="2.5" rx="1.25" fill="url(#neon-h)" opacity="0.75"/><rect class="pulse" x="60" y="212" width="120" height="6" rx="3" fill="#22e0ff" opacity="0.9" filter="url(#glow-h)"/></g>
+<g clip-path="url(#type0)"><text x="60" y="264" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="18" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="626.4" lengthAdjust="spacing" opacity="0.92" class="tl0">fullstack · frontend, backend, infra, and the glue between</text></g>
+<g clip-path="url(#type1)"><text x="60" y="264" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="18" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="550.8" lengthAdjust="spacing" opacity="0.92" class="tl1">11 years writing code · 9 years getting paid for it</text></g>
+<g clip-path="url(#type2)"><text x="60" y="264" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="18" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="540.0" lengthAdjust="spacing" opacity="0.92" class="tl2">stack: whichever one the problem actually deserves</text></g>
+<rect class="caret" x="60" y="248" width="9" height="21" fill="#ff6ec7" filter="url(#glow-h)"/>
+<g class="pill" style="animation-delay:0.85s"><rect x="60" y="312" width="133.9" height="42" rx="21" fill="#ffffff" fill-opacity="0.05" stroke="#ff2e97" stroke-opacity="0.45" stroke-width="1"/><circle cx="75" cy="333" r="3" fill="#ff2e97" filter="url(#glow-h)"/><text x="86" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="17" font-weight="700" fill="#ff2e97" text-anchor="start" textLength="20.4" lengthAdjust="spacing">23</text><text x="114.4" y="338" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#9a93c7" text-anchor="start" textLength="67.5" lengthAdjust="spacing">years old</text></g>
+<g class="pill" style="animation-delay:0.97s"><rect x="205.9" y="312" width="148.9" height="42" rx="21" fill="#ffffff" fill-opacity="0.05" stroke="#22e0ff" stroke-opacity="0.45" stroke-width="1"/><circle cx="220.9" cy="333" r="3" fill="#22e0ff" filter="url(#glow-h)"/><text x="231.9" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="17" font-weight="700" fill="#22e0ff" text-anchor="start" textLength="20.4" lengthAdjust="spacing">11</text><text x="260.3" y="338" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#9a93c7" text-anchor="start" textLength="82.5" lengthAdjust="spacing">years hobby</text></g>
+<g class="pill" style="animation-delay:1.09s"><rect x="366.8" y="312" width="191.2" height="42" rx="21" fill="#ffffff" fill-opacity="0.05" stroke="#7b5cff" stroke-opacity="0.45" stroke-width="1"/><circle cx="381.8" cy="333" r="3" fill="#7b5cff" filter="url(#glow-h)"/><text x="392.8" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="17" font-weight="700" fill="#7b5cff" text-anchor="start" textLength="10.2" lengthAdjust="spacing">9</text><text x="411.0" y="338" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#9a93c7" text-anchor="start" textLength="135.0" lengthAdjust="spacing">years professional</text></g>
+<g class="pill" style="animation-delay:1.21s"><rect x="570.0" y="312" width="153.7" height="42" rx="21" fill="#ffffff" fill-opacity="0.05" stroke="#ff6ec7" stroke-opacity="0.45" stroke-width="1"/><circle cx="585.0" cy="333" r="3" fill="#ff6ec7" filter="url(#glow-h)"/><text x="596.0" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="17" font-weight="700" fill="#ff6ec7" text-anchor="start" textLength="10.2" lengthAdjust="spacing">∞</text><text x="614.2" y="338" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#9a93c7" text-anchor="start" textLength="97.5" lengthAdjust="spacing">still curious</text></g>
+<circle class="blink" cx="64" cy="385" r="4" fill="#6ef7c1" filter="url(#glow-h)"/>
+<text x="78" y="389" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="start" textLength="510.6" lengthAdjust="spacing" class="fade-c">AVAILABLE FOR INTERESTING PROBLEMS   ·   UPTIME 23Y   ·   STATUS: SHIPPING</text>
+<g class="fade-b">
+<circle cx="985" cy="210" r="150" fill="url(#blobC-h)" opacity="0.30"/>
+<g class="orb" style="animation-duration:24s;animation-direction:normal"><ellipse cx="985" cy="210" rx="132" ry="132" fill="none" stroke="#ff2e97" stroke-opacity="0.30" stroke-width="1.2" transform="rotate(0 985 210)"/><g transform="rotate(0 985 210)"><circle cx="1117" cy="210" r="4.5" fill="#ff2e97" filter="url(#glow-h)"/><circle cx="853" cy="210" r="2.5" fill="#ff2e97" opacity="0.7"/></g></g>
+<g class="orb" style="animation-duration:17s;animation-direction:reverse"><ellipse cx="985" cy="210" rx="146" ry="58" fill="none" stroke="#22e0ff" stroke-opacity="0.30" stroke-width="1.2" transform="rotate(-24 985 210)"/><g transform="rotate(-24 985 210)"><circle cx="1131" cy="210" r="4.5" fill="#22e0ff" filter="url(#glow-h)"/><circle cx="839" cy="210" r="2.5" fill="#22e0ff" opacity="0.7"/></g></g>
+<g class="orb" style="animation-duration:31s;animation-direction:normal"><ellipse cx="985" cy="210" rx="108" ry="108" fill="none" stroke="#7b5cff" stroke-opacity="0.30" stroke-width="1.2" transform="rotate(0 985 210)"/><g transform="rotate(0 985 210)"><circle cx="1093" cy="210" r="4.5" fill="#7b5cff" filter="url(#glow-h)"/><circle cx="877" cy="210" r="2.5" fill="#7b5cff" opacity="0.7"/></g></g>
+<g class="orb" style="animation-duration:21s;animation-direction:reverse"><ellipse cx="985" cy="210" rx="150" ry="44" fill="none" stroke="#6ef7c1" stroke-opacity="0.30" stroke-width="1.2" transform="rotate(62 985 210)"/><g transform="rotate(62 985 210)"><circle cx="1135" cy="210" r="4.5" fill="#6ef7c1" filter="url(#glow-h)"/><circle cx="835" cy="210" r="2.5" fill="#6ef7c1" opacity="0.7"/></g></g>
+<g class="core"><circle cx="985" cy="210" r="52" fill="#05030e" fill-opacity="0.72" stroke="url(#neon-h)" stroke-width="1.6"/><circle cx="985" cy="210" r="52" fill="url(#blobA-h)" opacity="0.35"/></g><text x="985" y="223" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="url(#word-h)" text-anchor="middle" letter-spacing="2" filter="url(#glow-h)">DR</text>
+</g>
+</svg>

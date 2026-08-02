@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="170" viewBox="0 0 1200 170" fill="none" role="img">
+<defs>
+
+<linearGradient id="neon-f" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97"/>
+  <stop offset="45%" stop-color="#7b5cff"/>
+  <stop offset="100%" stop-color="#22e0ff"/>
+</linearGradient>
+<linearGradient id="sheenG-f" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="50%" stop-color="#ff6ec7" stop-opacity="0.13"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="glass-f" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#ffffff" stop-opacity="0.03"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+</linearGradient>
+<linearGradient id="edge-f" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97" stop-opacity="0.55"/>
+  <stop offset="50%" stop-color="#7b5cff" stop-opacity="0.20"/>
+  <stop offset="100%" stop-color="#22e0ff" stop-opacity="0.55"/>
+</linearGradient>
+<linearGradient id="bgfill-f" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#05030e"/>
+  <stop offset="100%" stop-color="#0b0720"/>
+</linearGradient>
+<radialGradient id="blobA-f"><stop offset="0%" stop-color="#ff2e97" stop-opacity="0.85"/><stop offset="100%" stop-color="#ff2e97" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobB-f"><stop offset="0%" stop-color="#22e0ff" stop-opacity="0.75"/><stop offset="100%" stop-color="#22e0ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobC-f"><stop offset="0%" stop-color="#7b5cff" stop-opacity="0.9"/><stop offset="100%" stop-color="#7b5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobD-f"><stop offset="0%" stop-color="#6ef7c1" stop-opacity="0.45"/><stop offset="100%" stop-color="#6ef7c1" stop-opacity="0"/></radialGradient>
+<filter id="soft-f" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="52"/>
+</filter>
+<filter id="glow-f" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="6" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="grain-f" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+</filter>
+<pattern id="grid-f" width="44" height="44" patternUnits="userSpaceOnUse">
+  <path d="M44 0H0V44" stroke="#eae6ff" stroke-opacity="0.045" stroke-width="1" fill="none"/>
+</pattern>
+<clipPath id="card-f"><rect x="6" y="6" width="1188" height="158" rx="22"/></clipPath>
+
+<linearGradient id="word-f" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#ff6ec7"/><stop offset="50%" stop-color="#eae6ff"/><stop offset="100%" stop-color="#22e0ff"/>
+</linearGradient>
+
+</defs>
+<style>
+<![CDATA[
+
+.b1,.b2,.b3,.b4 { transform-box: view-box; }
+.b1 { animation: drift1 26s ease-in-out infinite alternate; }
+.b2 { animation: drift2 31s ease-in-out infinite alternate; }
+.b3 { animation: drift3 23s ease-in-out infinite alternate; }
+.b4 { animation: drift4 37s ease-in-out infinite alternate; }
+@keyframes drift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(170px,-40px) scale(1.25); } }
+@keyframes drift2 { from { transform: translate(0,0) scale(1.1); } to { transform: translate(-190px,-70px) scale(0.85); } }
+@keyframes drift3 { from { transform: translate(0,0) scale(0.9); } to { transform: translate(120px,90px) scale(1.2); } }
+@keyframes drift4 { from { transform: translate(0,0) scale(1); } to { transform: translate(-140px,60px) scale(1.3); } }
+
+.sheen { transform-box: view-box; animation: sheen 9s ease-in-out infinite; }
+@keyframes sheen {
+  0%,55% { transform: translateX(0) skewX(-14deg); }
+  85%,100% { transform: translateX(1700px) skewX(-14deg); }
+}
+
+.dot { transform-box: fill-box; transform-origin: center; animation: bob 1.6s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(-7px); opacity: 1; } }
+
+]]>
+</style>
+
+<g clip-path="url(#card-f)">
+  <rect x="6" y="6" width="1188" height="158" rx="22" fill="url(#bgfill-f)"/>
+  
+<g filter="url(#soft-f)" opacity="0.9">
+  <circle class="b1" cx="216" cy="51" r="93" fill="url(#blobA-f)"/>
+  <circle class="b2" cx="936" cy="122" r="102" fill="url(#blobB-f)"/>
+  <circle class="b3" cx="624" cy="17" r="85" fill="url(#blobC-f)"/>
+  <circle class="b4" cx="1104" cy="34" r="68" fill="url(#blobD-f)"/>
+</g>
+  <rect x="6" y="6" width="1188" height="158" rx="22" fill="#05030e" opacity="0.55"/>
+  <rect x="6" y="6" width="1188" height="158" rx="22" fill="url(#grid-f)"/>
+  <rect x="6" y="6" width="1188" height="158" rx="22" fill="url(#glass-f)"/>
+  <rect x="6" y="6" width="1188" height="158" filter="url(#grain-f)" opacity="0.05"/>
+  <rect class="sheen" x="-400" y="6" width="300" height="158" fill="url(#sheenG-f)"/>
+</g>
+<rect x="6.5" y="6.5" width="1187" height="157" rx="22" fill="none"
+      stroke="url(#edge-f)" stroke-width="1.4"/>
+<text x="600" y="78" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" fill="url(#word-f)" text-anchor="middle" letter-spacing="1.5" filter="url(#glow-f)">let's build something that outlives the demo</text>
+<text x="600" y="110" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#9a93c7" text-anchor="middle" textLength="495.0" lengthAdjust="spacing">// thanks for scrolling — the source of this README is in the repo</text>
+<circle cx="566" cy="138" r="3.5" fill="#ff2e97" class="dot" style="animation-delay:0.00s"/><circle cx="583" cy="138" r="3.5" fill="#22e0ff" class="dot" style="animation-delay:0.16s"/><circle cx="600" cy="138" r="3.5" fill="#7b5cff" class="dot" style="animation-delay:0.32s"/><circle cx="617" cy="138" r="3.5" fill="#ff6ec7" class="dot" style="animation-delay:0.48s"/><circle cx="634" cy="138" r="3.5" fill="#6ef7c1" class="dot" style="animation-delay:0.64s"/>
+</svg>

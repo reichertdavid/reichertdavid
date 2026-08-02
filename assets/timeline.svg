@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img">
+<defs>
+
+<linearGradient id="neon-t" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97"/>
+  <stop offset="45%" stop-color="#7b5cff"/>
+  <stop offset="100%" stop-color="#22e0ff"/>
+</linearGradient>
+<linearGradient id="sheenG-t" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="50%" stop-color="#ff6ec7" stop-opacity="0.13"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="glass-t" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#ffffff" stop-opacity="0.03"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+</linearGradient>
+<linearGradient id="edge-t" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#ff2e97" stop-opacity="0.55"/>
+  <stop offset="50%" stop-color="#7b5cff" stop-opacity="0.20"/>
+  <stop offset="100%" stop-color="#22e0ff" stop-opacity="0.55"/>
+</linearGradient>
+<linearGradient id="bgfill-t" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#05030e"/>
+  <stop offset="100%" stop-color="#0b0720"/>
+</linearGradient>
+<radialGradient id="blobA-t"><stop offset="0%" stop-color="#ff2e97" stop-opacity="0.85"/><stop offset="100%" stop-color="#ff2e97" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobB-t"><stop offset="0%" stop-color="#22e0ff" stop-opacity="0.75"/><stop offset="100%" stop-color="#22e0ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobC-t"><stop offset="0%" stop-color="#7b5cff" stop-opacity="0.9"/><stop offset="100%" stop-color="#7b5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="blobD-t"><stop offset="0%" stop-color="#6ef7c1" stop-opacity="0.45"/><stop offset="100%" stop-color="#6ef7c1" stop-opacity="0"/></radialGradient>
+<filter id="soft-t" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="52"/>
+</filter>
+<filter id="glow-t" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="6" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="grain-t" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+</filter>
+<pattern id="grid-t" width="44" height="44" patternUnits="userSpaceOnUse">
+  <path d="M44 0H0V44" stroke="#eae6ff" stroke-opacity="0.045" stroke-width="1" fill="none"/>
+</pattern>
+<clipPath id="card-t"><rect x="6" y="6" width="1188" height="308" rx="26"/></clipPath>
+
+</defs>
+<style>
+<![CDATA[
+
+.b1,.b2,.b3,.b4 { transform-box: view-box; }
+.b1 { animation: drift1 26s ease-in-out infinite alternate; }
+.b2 { animation: drift2 31s ease-in-out infinite alternate; }
+.b3 { animation: drift3 23s ease-in-out infinite alternate; }
+.b4 { animation: drift4 37s ease-in-out infinite alternate; }
+@keyframes drift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(170px,-40px) scale(1.25); } }
+@keyframes drift2 { from { transform: translate(0,0) scale(1.1); } to { transform: translate(-190px,-70px) scale(0.85); } }
+@keyframes drift3 { from { transform: translate(0,0) scale(0.9); } to { transform: translate(120px,90px) scale(1.2); } }
+@keyframes drift4 { from { transform: translate(0,0) scale(1); } to { transform: translate(-140px,60px) scale(1.3); } }
+
+.sheen { transform-box: view-box; animation: sheen 9s ease-in-out infinite; }
+@keyframes sheen {
+  0%,55% { transform: translateX(0) skewX(-14deg); }
+  85%,100% { transform: translateX(1700px) skewX(-14deg); }
+}
+
+.bar { animation: draw 2.4s cubic-bezier(.2,.8,.2,1) forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.ping { transform-box: fill-box; transform-origin: center; animation: ping 2.6s ease-out infinite; }
+@keyframes ping { 0% { transform: scale(1); opacity: .9; } 70%,100% { transform: scale(3); opacity: 0; } }
+.fade { opacity: 0; animation: fade 1s ease-out .9s forwards; }
+@keyframes fade { to { opacity: 1; } }
+
+]]>
+</style>
+
+<g clip-path="url(#card-t)">
+  <rect x="6" y="6" width="1188" height="308" rx="26" fill="url(#bgfill-t)"/>
+  
+<g filter="url(#soft-t)" opacity="0.9">
+  <circle class="b1" cx="216" cy="96" r="176" fill="url(#blobA-t)"/>
+  <circle class="b2" cx="936" cy="230" r="192" fill="url(#blobB-t)"/>
+  <circle class="b3" cx="624" cy="32" r="160" fill="url(#blobC-t)"/>
+  <circle class="b4" cx="1104" cy="64" r="128" fill="url(#blobD-t)"/>
+</g>
+  <rect x="6" y="6" width="1188" height="308" rx="26" fill="#05030e" opacity="0.55"/>
+  <rect x="6" y="6" width="1188" height="308" rx="26" fill="url(#grid-t)"/>
+  <rect x="6" y="6" width="1188" height="308" rx="26" fill="url(#glass-t)"/>
+  <rect x="6" y="6" width="1188" height="308" filter="url(#grain-t)" opacity="0.05"/>
+  <rect class="sheen" x="-400" y="6" width="300" height="308" fill="url(#sheenG-t)"/>
+</g>
+<rect x="6.5" y="6.5" width="1187" height="307" rx="26" fill="none"
+      stroke="url(#edge-t)" stroke-width="1.4"/>
+<text x="42" y="62" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#22e0ff" letter-spacing="4" textLength="250" lengthAdjust="spacing">// git log --reverse</text>
+<text x="1158" y="62" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="400" fill="#5b5390" text-anchor="end" textLength="420.0" lengthAdjust="spacing">teenage side job → part-time helper → full-time engineer</text>
+<line x1="96" y1="214" x2="1104" y2="214" stroke="#eae6ff" stroke-opacity="0.12" stroke-width="1"/>
+<line x1="96.0" y1="207" x2="96.0" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="96.0" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2015</text>
+<line x1="187.6" y1="210" x2="187.6" y2="214" stroke="#eae6ff" stroke-opacity="0.14" stroke-width="1"/>
+<line x1="279.3" y1="207" x2="279.3" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="279.3" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2017</text>
+<line x1="370.9" y1="210" x2="370.9" y2="214" stroke="#eae6ff" stroke-opacity="0.14" stroke-width="1"/>
+<line x1="462.5" y1="207" x2="462.5" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="462.5" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2019</text>
+<line x1="554.2" y1="210" x2="554.2" y2="214" stroke="#eae6ff" stroke-opacity="0.14" stroke-width="1"/>
+<line x1="645.8" y1="207" x2="645.8" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="645.8" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2021</text>
+<line x1="737.5" y1="210" x2="737.5" y2="214" stroke="#eae6ff" stroke-opacity="0.14" stroke-width="1"/>
+<line x1="829.1" y1="207" x2="829.1" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="829.1" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2023</text>
+<line x1="920.7" y1="210" x2="920.7" y2="214" stroke="#eae6ff" stroke-opacity="0.14" stroke-width="1"/>
+<line x1="1012.4" y1="207" x2="1012.4" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="1012.4" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2025</text>
+<line x1="1104.0" y1="207" x2="1104.0" y2="214" stroke="#eae6ff" stroke-opacity="0.3" stroke-width="1"/>
+<text x="1104.0" y="236" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="middle" textLength="27.6" lengthAdjust="spacing">2026</text>
+<line class="bar" x1="96.0" y1="144" x2="1104.0" y2="144" stroke="#ff2e97" stroke-width="16" stroke-linecap="round" stroke-opacity="0.18" stroke-dasharray="1008.0" stroke-dashoffset="1008.0" style="animation-delay:0.0s"/>
+<line class="bar" x1="96.0" y1="144" x2="1104.0" y2="144" stroke="#ff2e97" stroke-width="10" stroke-linecap="round" stroke-opacity="0.28" stroke-dasharray="1008.0" stroke-dashoffset="1008.0" style="animation-delay:0.0s"/>
+<line class="bar" x1="96.0" y1="144" x2="1104.0" y2="144" stroke="#ff2e97" stroke-width="7" stroke-linecap="round" stroke-opacity="0.9" stroke-dasharray="1008.0" stroke-dashoffset="1008.0" style="animation-delay:0.0s"/>
+<text x="100.0" y="128" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="100.8" lengthAdjust="spacing" opacity="0.9" class="fade">writing code</text>
+<text x="1100.0" y="128" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="700" fill="#ff2e97" text-anchor="end" textLength="67.2" lengthAdjust="spacing" class="fade">11 years</text>
+<circle r="4" fill="#ff2e97" filter="url(#glow-t)" opacity="0.95"><animate attributeName="cx" values="96.0;1104.0" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="144;144" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="6s" repeatCount="indefinite"/></circle>
+<line class="bar" x1="279.3" y1="184" x2="1104.0" y2="184" stroke="#22e0ff" stroke-width="16" stroke-linecap="round" stroke-opacity="0.18" stroke-dasharray="824.7" stroke-dashoffset="824.7" style="animation-delay:0.45s"/>
+<line class="bar" x1="279.3" y1="184" x2="1104.0" y2="184" stroke="#22e0ff" stroke-width="10" stroke-linecap="round" stroke-opacity="0.28" stroke-dasharray="824.7" stroke-dashoffset="824.7" style="animation-delay:0.45s"/>
+<line class="bar" x1="279.3" y1="184" x2="1104.0" y2="184" stroke="#22e0ff" stroke-width="7" stroke-linecap="round" stroke-opacity="0.9" stroke-dasharray="824.7" stroke-dashoffset="824.7" style="animation-delay:0.45s"/>
+<text x="283.3" y="168" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="159.6" lengthAdjust="spacing" opacity="0.9" class="fade">getting paid for it</text>
+<text x="1100.0" y="168" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="700" fill="#22e0ff" text-anchor="end" textLength="58.8" lengthAdjust="spacing" class="fade">9 years</text>
+<circle r="4" fill="#22e0ff" filter="url(#glow-t)" opacity="0.95"><animate attributeName="cx" values="279.3;1104.0" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="184;184" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="7s" repeatCount="indefinite"/></circle>
+<circle cx="96.0" cy="214" r="7" fill="#05030e" stroke="#ff2e97" stroke-width="2"/>
+<circle class="ping" cx="96.0" cy="214" r="7" fill="none" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:0.0s"/>
+<circle cx="96.0" cy="214" r="3" fill="#ff2e97" filter="url(#glow-t)"/>
+<text x="104.0" y="266" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="145.8" lengthAdjust="spacing" opacity="0.92" class="fade">first line of code</text>
+<text x="104.0" y="284" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="start" textLength="41.4" lengthAdjust="spacing" class="fade">age 12</text>
+<circle cx="279.3" cy="214" r="7" fill="#05030e" stroke="#7b5cff" stroke-width="2"/>
+<circle class="ping" cx="279.3" cy="214" r="7" fill="none" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:0.7s"/>
+<circle cx="279.3" cy="214" r="3" fill="#7b5cff" filter="url(#glow-t)"/>
+<text x="287.3" y="266" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" font-weight="400" fill="#eae6ff" text-anchor="start" textLength="121.5" lengthAdjust="spacing" opacity="0.92" class="fade">first paid work</text>
+<text x="287.3" y="284" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="start" textLength="41.4" lengthAdjust="spacing" class="fade">age 14</text>
+<circle cx="1104.0" cy="214" r="7" fill="#05030e" stroke="#22e0ff" stroke-width="2"/>
+<circle class="ping" cx="1104.0" cy="214" r="7" fill="none" stroke="#22e0ff" stroke-width="1.5" style="animation-delay:1.4s"/>
+<circle cx="1104.0" cy="214" r="3" fill="#22e0ff" filter="url(#glow-t)"/>
+<text x="1098.0" y="266" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" font-weight="400" fill="#eae6ff" text-anchor="end" textLength="113.4" lengthAdjust="spacing" opacity="0.92" class="fade">still shipping</text>
+<text x="1098.0" y="284" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="400" fill="#5b5390" text-anchor="end" textLength="41.4" lengthAdjust="spacing" class="fade">age 23</text>
+</svg>
